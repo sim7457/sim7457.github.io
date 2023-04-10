@@ -1,0 +1,50 @@
+/* background */
+.backSky {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, #111, #0e0f19);
+    overflow: hidden;
+  }
+  
+  /* Parent wrapped in a star */
+  .sky {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveStar 240s linear infinite;
+  }
+  
+  /* star */
+  .sky .star {
+    fill: #fff;
+    stroke: none;
+    stroke-width: 0;
+  }
+  
+  /* star movement effect */
+  @keyframes moveStar {
+    from {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .Bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1200px;
+    height: 600px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    
+  }
