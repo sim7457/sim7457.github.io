@@ -43,6 +43,9 @@ const Head = styled.div`
         cursor: pointer;
         user-select: none;
       }
+      a {
+        letter-spacing: 0.5em;
+      }
     }
   }
 `;
@@ -64,20 +67,18 @@ const Header = () => {
     <Head>
       <div className="inner">
         <h1>
-          <Link to="/">Junghoon</Link>
+          <Link to="#">Junghoon</Link>
         </h1>
         <nav className="gnb">
           <ul>
-            <li onClick={() => clickHandler(1200)}>ABOUT ME</li>
-            <li onClick={() => clickHandler(2400)}>WebSite</li>
             <li>
-              <Link to="/">menu01</Link>
+              <a href="#MainVisual">MAINVISUAL</a>
             </li>
             <li>
-              <Link to="/">menu01</Link>
+              <a href="#WebSite">WEBSITE</a>
             </li>
             <li>
-              <Link to="/">menu01</Link>
+              <a href="#Profile">PROFILE</a>
             </li>
           </ul>
         </nav>

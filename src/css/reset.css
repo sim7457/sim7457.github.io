@@ -27,3 +27,10 @@ body {
 img {
     vertical-align: middle;
 }
+
+.fp-warning, .fp-watermark {
+    z-index: 9999999;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}

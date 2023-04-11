@@ -66,7 +66,7 @@ const ArtistName = styled.h3`
   transform: translate(-50%, -50%) rotate(0deg);
   color: #fff;
 
-  .active & {
+  &.active {
     display: none;
   }
   @media only screen and (min-width: 1280px) {
@@ -81,12 +81,12 @@ const ArtistName = styled.h3`
 const SectionContent = styled.div`
   position: relative;
   z-index: 30;
-  opacity: 0;
+  opacity: 1;
   align-self: flex-end;
   width: 100%;
   transition: all 0.35s 0.1s ease-out;
 
-  .active & {
+  &.active {
     opacity: 1;
   }
 `;
@@ -201,19 +201,22 @@ const ArtistList = () => {
           className={active === i ? "active" : ""}
           onClick={() => setActive(i)}
         >
-          <ArtistName>{artist.name}</ArtistName>
-          <SectionContent>
-            <Inner>
-              <ArtistBio>
-                <h2>{artist.name}</h2>
-                <p>{artist.description}</p>
-                <ArtistProfileLink
-                  href={artist.spotify.profileUrl}
-                  target="_blank"
-                ></ArtistProfileLink>
-              </ArtistBio>
-            </Inner>
-          </SectionContent>
+          {active !== i ? (
+            <ArtistName>{artist.name}</ArtistName>
+          ) : (
+            <SectionContent>
+              <Inner>
+                <ArtistBio>
+                  <h2>{artist.name}</h2>
+                  <p>{artist.description}</p>
+                  <ArtistProfileLink
+                    href={artist.spotify.profileUrl}
+                    target="_blank"
+                  ></ArtistProfileLink>
+                </ArtistBio>
+              </Inner>
+            </SectionContent>
+          )}
         </ArtistListItem>
       ))}
     </ArtistListContainer>

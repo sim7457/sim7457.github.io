@@ -8,12 +8,12 @@ const SlickCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    arrows: false,
+    arrows: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 4000,
   };
 
   return (
@@ -36,6 +36,26 @@ const SlickCarousel = () => {
                 <p>HTML5 / CSS3 / JS(j-Query)</p>
                 <h3>WORK</h3>
                 <p>개인작업 100%</p>
+              </div>
+              <div className="Link">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/sim7457/Homework_06"
+                      target={"_blank"}
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sim7457.github.io/Homework_06/"
+                      target={"_blank"}
+                    >
+                      HomePage
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="right_box">
@@ -66,6 +86,26 @@ const SlickCarousel = () => {
                 <h3>WORK</h3>
                 <p>개인작업 100%</p>
               </div>
+              <div className="Link kakao_link">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/sim7457/Homework_07"
+                      target={"_blank"}
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sim7457.github.io/Homework_07/"
+                      target={"_blank"}
+                    >
+                      HomePage
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="right_box">
               <div className="content">
@@ -94,6 +134,26 @@ const SlickCarousel = () => {
                 <p>HTML5 / CSS3 / JS(j-Query)</p>
                 <h3>WORK</h3>
                 <p>개인작업 100%</p>
+              </div>
+              <div className="Link AstonMartin_link">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/sim7457/Homework_03"
+                      target={"_blank"}
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sim7457.github.io/Homework_03/"
+                      target={"_blank"}
+                    >
+                      HomePage
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="right_box">
@@ -124,6 +184,26 @@ const SlickCarousel = () => {
                 <h3>WORK</h3>
                 <p>개인작업 100%</p>
               </div>
+              <div className="Link Lotte_link">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/sim7457/Homework_05"
+                      target={"_blank"}
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sim7457.github.io/Homework_05/"
+                      target={"_blank"}
+                    >
+                      HomePage
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="right_box">
               <div className="content">
@@ -152,6 +232,26 @@ const SlickCarousel = () => {
                 <p>HTML5 / CSS3 / JS(j-Query)</p>
                 <h3>WORK</h3>
                 <p>개인작업 100%</p>
+              </div>
+              <div className="Link shinsegae_link">
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/sim7457/Homework_12"
+                      target={"_blank"}
+                    >
+                      GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://sim7457.github.io/Homework_12/"
+                      target={"_blank"}
+                    >
+                      HomePage
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="right_box">

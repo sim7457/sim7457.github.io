@@ -4,10 +4,14 @@ import "./css/reset.css";
 import Header from "./Header.js";
 import Main_Vg_Pg from "./Main_Vg_Pg.js";
 import StarryBackground from "./StarryBackground.js";
+import Profiler from "./Profile.js";
+import StarField from "./StarField";
+import styled from "styled-components";
 
 const Fullpage = () => (
   <ReactFullpage
     scrollingSpeed={1000} /* Options here */
+    anchors={["MainVisual", "WebSite", "Profile"]}
     render={() => {
       return (
         <ReactFullpage.Wrapper>
@@ -18,7 +22,7 @@ const Fullpage = () => (
             <StarryBackground />
           </div>
           <div className="section">
-            <p>Section 2</p>
+            <StarField />
           </div>
         </ReactFullpage.Wrapper>
       );
@@ -26,13 +30,18 @@ const Fullpage = () => (
   />
 );
 
+const BG = styled.div`
+  background: #111;
+`;
 const Fullpage_main = () => {
   return (
     <>
-      <Header />
-      <div id="react-root">
-        <Fullpage />
-      </div>
+      <BG>
+        <Header />
+        <div id="react-root">
+          <Fullpage />
+        </div>
+      </BG>
     </>
   );
 };

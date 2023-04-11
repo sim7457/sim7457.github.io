@@ -4,12 +4,31 @@
     left: 0;
     z-index: 999;
 }
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.slick-prev {
+    margin: 0 0 0 -570px;
+}
+.slick-next {
+    margin: 0 0 0 550px;
+}
+.slick-prev::before,.slick-next::before{
+    font-size: 35px;
+    color: #000;
+}
 .flex_box {
     display: flex;
 }
 .left_box {
     width: 600px;
     padding: 60px 0 0 60px;
+    border-right: 1px solid #ddd;
+    position: relative;
 }
 .left_box h2{
     font-size: 55px;
@@ -38,7 +57,7 @@
 .left_box .Info ul{
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     line-height: 25px;
 }
 .left_box .Info li~li {
@@ -83,6 +102,81 @@
     font-weight: 300;
     margin-bottom: 60px;
     line-height: 25px;
+
+}
+.Link {
+position: absolute;
+bottom: 15%;
+left: 40%;
+}
+.Link ul {
+    display: flex;
+    gap: 30px;
+}
+.Link ul li a {
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #3182f6;
+    background: #3182f6;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.Link ul li a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #3182f6;
+}
+.kakao_link ul li a {
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #fee102;
+    background: #fee102;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.kakao_link ul li a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #fee102;
+}
+.AstonMartin_link ul li a {
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #247d54;
+    background: #247d54;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.AstonMartin_link ul li a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #247d54;
+}
+.Lotte_link ul li a {
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #da291c;
+    background: #da291c;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.Lotte_link ul li a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #da291c;
+}
+.shinsegae_link ul li a {
+    padding: 12px 20px 12px 20px;
+    border: 2px solid #e60000;
+    background: #e60000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.shinsegae_link ul li a:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #e60000;
 }
 .right_box {
     width: 600px;
