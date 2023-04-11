@@ -111,10 +111,10 @@ left: 40%;
 }
 .Link ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 .Link ul li a {
-    padding: 12px 20px 12px 20px;
+    padding: 12px 25px 12px 25px;
     border: 2px solid #3182f6;
     background: #3182f6;
     color: #fff;
