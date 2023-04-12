@@ -6,6 +6,10 @@ const Profile_bg = styled.div`
   top: 0;
   left: 0;
   padding: 50px 50px 0 50px;
+  background: #fff;
+  border-radius: 15px;
+  height: 600px;
+
   h2 {
     text-align: center;
     font-size: 50px;

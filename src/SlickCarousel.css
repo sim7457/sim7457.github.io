@@ -1,8 +1,22 @@
+.slick-list {
+    border-radius: 15px;
+    overflow: hidden;
+}
 .slick-dots{
     position: absolute;
-    bottom: 10px;
+    bottom: -50px;
     left: 0;
     z-index: 999;
+}
+.slick-active {
+    color: #fff;
+}
+.slick-dots li button::before {
+    color: #fff;
+}
+.slick-dots li.slick-active button:before{
+    color: #fff;
+    opacity: 1;
 }
 .slick-arrow{
     position: absolute;
@@ -10,16 +24,18 @@
     left: 50%;
 transform: translate(-50%,-50%);
     z-index: 999;
+
+    
 }
 .slick-prev {
-    margin: 0 0 0 -570px;
+    margin: 0 0 0 -670px;
 }
 .slick-next {
-    margin: 0 0 0 550px;
+    margin: 0 0 0 650px;
 }
 .slick-prev::before,.slick-next::before{
     font-size: 35px;
-    color: #000;
+    color: #fff;
 }
 .flex_box {
     display: flex;
@@ -29,6 +45,7 @@ transform: translate(-50%,-50%);
     padding: 60px 0 0 60px;
     border-right: 1px solid #ddd;
     position: relative;
+    background: #f7f7f7;
 }
 .left_box h2{
     font-size: 55px;
@@ -59,6 +76,12 @@ transform: translate(-50%,-50%);
     font-weight: 300;
     margin-bottom: 40px;
     line-height: 25px;
+}
+.left_box .Info li {
+    color: #000;
+}
+.left_box .Info p {
+    color: #000;
 }
 .left_box .Info li~li {
     position: relative;

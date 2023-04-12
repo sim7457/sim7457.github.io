@@ -9,6 +9,7 @@ const Container = styled.div`
   height: 100vh;
   background: linear-gradient(to bottom, #020107 0%, #201b46 100%);
   z-index: 1;
+  overflow: hidden;
 `;
 
 // const Text = styled.div`
@@ -29,9 +30,9 @@ const BOX = styled.div`
   transform: translate(-50%, -50%);
   width: 1200px;
   height: 600px;
-  background: #fff;
-  border-radius: 15px;
-  overflow: hidden;
+  /* background: #fff; */
+  /* border-radius: 15px;
+  overflow: hidden; */
 `;
 
 const starFieldWidth = 2560;

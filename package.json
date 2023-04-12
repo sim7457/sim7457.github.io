@@ -1,6 +1,7 @@
 {
   "name": "0.full_portfolio",
   "version": "0.1.0",
+  "homepage": "https://sim7457.github.io",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.38",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
