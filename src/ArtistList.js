@@ -16,6 +16,9 @@ const ArtistListContainer = styled.ul`
   @media only screen and (min-width: 1280px) {
     flex-direction: row;
   }
+  @media (max-width: 1280px) {
+    padding-top: 100px;
+  }
 `;
 
 const ArtistListItem = styled.li`
